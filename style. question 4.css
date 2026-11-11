@@ -1,0 +1,114 @@
+
+/* GENERAL STYLING */
+body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER */
+header {
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* NAVIGATION */
+nav {
+    background-color: black;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    padding: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: orange;
+    color: black;
+}
+
+/* SECTIONS */
+section {
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* TABLE */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: darkblue;
+    color: white;
+}
+
+/* FORM */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, select {
+    padding: 10px;
+}
+
+button {
+    background-color: darkblue;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: orange;
+}
+
+/* FLEXBOX LAYOUT */
+#about {
+    display: flex;
+    flex-direction: column;
+}
+
+/* RESPONSIVE DESIGN */
+@media screen and (max-width: 600px) {
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    section {
+        margin: 10px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+}

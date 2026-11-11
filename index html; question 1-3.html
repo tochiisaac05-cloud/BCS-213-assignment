@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Student Information Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>Masinde Muliro University</h1>
+        <h2>Student Information Portal</h2>
+    </header>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#registration">Student Registration</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- HOME -->
+    <section id="home">
+        <h2>Welcome to the Student Portal</h2>
+        <p>Access student information and registration services.</p>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>
+            The Student Information Portal helps students register,
+            access academic information and manage their details.
+        </p>
+
+        <h3>Academic Programmes</h3>
+        <ul>
+            <li>Computer Science</li>
+            <li>Information Technology</li>
+            <li>Business Administration</li>
+            <li>Education</li>
+        </ul>
+    </section>
+
+    <!-- STUDENT TABLE -->
+    <section>
+        <h2>Student Information</h2>
+
+        <table>
+            <tr>
+                <th>Student ID</th>
+                <th>Student Name</th>
+                <th>Registration Number</th>
+                <th>Programme</th>
+                <th>Year of Study</th>
+            </tr>
+
+            <tr>
+                <td>001</td>
+                <td>John</td>
+                <td>COM/B/01-001/2025</td>
+                <td>Computer Science</td>
+                <td>Year 1</td>
+            </tr>
+
+            <tr>
+                <td>002</td>
+                <td>Mary</td>
+                <td>COM/B/02-002/2025</td>
+                <td>Information Technology</td>
+                <td>Year 2</td>
+            </tr>
+
+            <tr>
+                <td>003</td>
+                <td>Peter</td>
+                <td>COM/B/03-003/2025</td>
+                <td>Education</td>
+                <td>Year 3</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- REGISTRATION FORM -->
+    <section id="registration">
+        <h2>Student Registration Form</h2>
+
+        <form id="registrationForm">
+
+            <label>Full Name:</label>
+            <input type="text" id="name" required>
+
+            <label>Registration Number:</label>
+            <input type="text" id="regNo" required>
+
+            <label>Email Address:</label>
+            <input type="email" id="email" required>
+
+            <label>Gender:</label>
+            <input type="radio" name="gender" value="Male"> Male
+            <input type="radio" name="gender" value="Female"> Female
+
+            <br><br>
+
+            <label>Academic Programme:</label>
+            <select id="programme" required>
+                <option value="">Select Programme</option>
+                <option>Computer Science</option>
+                <option>Information Technology</option>
+                <option>Business Administration</option>
+                <option>Education</option>
+            </select>
+
+            <br><br>
+
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+
+        </form>
+
+        <div id="result"></div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: info@mmust.ac.ke</p>
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
